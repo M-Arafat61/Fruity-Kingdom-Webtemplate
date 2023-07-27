@@ -36,7 +36,7 @@
 </head>
 <body class="font-lato bg-white max-w-screen-2xl mx-auto">
     <header class="bg-white max-w-screen-lg mx-auto ">
-        <nav class=" flex flex-row justify-between items-center p-3 lg:bg-primary-red rounded-full my-10">
+        <nav class=" flex flex-row justify-between items-center p-3 md:pb-14 lg:pb-3 lg:bg-primary-red rounded-full lg:my-10">
             <div class="hidden lg:flex">
                 <ul class="flex flex-row text-base gap-4">
                     <li>Home</li>
@@ -104,7 +104,7 @@
             <div class="carousel w-screen lg:w-full relative">
 
                 <!-- slide 1 -->
-                <div id="slide1" class="carousel-item relative hero fit lg:min-h-[calc(100vh-200px)]" style="background-image: url(./images/banner1.png);">
+                <div id="slide1" class="carousel-item rounded-2xl relative hero fit lg:min-h-[calc(100vh-200px)]" style="background-image: url(./images/banner1.png);">
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content flex flex-col">
                         <h2 class="text-white text-7xl font-extrabold px-10">Exotic tastes at your <br> doorstep</h2>
@@ -117,7 +117,7 @@
                 </div>
                 </div>
                 <!-- slide 2 -->
-                <div id="slide2" class="carousel-item relative hero fit lg:min-h-[calc(100vh-200px)]" style="background-image: url(./images/banner2.png);">
+                <div id="slide2" class="carousel-item rounded-2xl relative hero fit lg:min-h-[calc(100vh-200px)]" style="background-image: url(./images/banner2.png);">
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content flex flex-col">
                         <h2 class="text-white text-7xl font-extrabold px-10">Exotic tastes at your <br> doorstep</h2>
@@ -130,7 +130,7 @@
                 </div>
                 </div>
                 <!-- slide 3 -->
-                <div id="slide3" class="carousel-item relative hero fit lg:min-h-[calc(100vh-200px)]" style="background-image: url(./images/banner3.png);">
+                <div id="slide3" class="carousel-item rounded-2xl relative hero fit lg:min-h-[calc(100vh-200px)]" style="background-image: url(./images/banner3.png);">
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content flex flex-col">
                         <h2 class="text-white text-7xl font-extrabold px-10">Exotic tastes at your <br> doorstep</h2>
@@ -143,7 +143,7 @@
                 </div>
                 </div>
                 <!-- slide 4 -->
-                <div id="slide4" class="carousel-item relative hero fit lg:min-h-[calc(100vh-200px)]" style="background-image: url(./images/banner4.png);">
+                <div id="slide4" class="carousel-item rounded-2xl relative hero fit lg:min-h-[calc(100vh-200px)]" style="background-image: url(./images/banner4.png);">
                     <div class="hero-overlay bg-opacity-60"></div>
                     <div class="hero-content text-center text-neutral-content flex flex-col">
                         <h2 class="text-white text-7xl font-extrabold px-10">Exotic tastes at your <br> doorstep</h2>
@@ -160,7 +160,7 @@
         <!-- fruits -->
         <section class="mb-14">
             <div class="px-20 ">
-                <div class="relative bg-white hidden lg:flex flex-row  justify-center items-center p-3 -mt-14 drop-shadow-lg rounded-xl shadow-lg">
+                <div class="relative bg-white hidden md:flex lg:flex flex-row  justify-center items-center p-3 lg:-mt-14 drop-shadow-lg rounded-xl shadow-lg">
                     <div class="w-32 h-24">
                         <img src="./images/fruit1.png" alt="">
                     </div>
@@ -185,11 +185,15 @@
 
         <!-- Deal of the day section -->
         <section>
+
+            <!-- Section heading -->
             <div class="flex flex-col lg:flex-row justify-between items-center gap-10 px-4 mt-20 lg:mt-36">
-                <div class="space-y-3">
+                <div class="space-y-3 md:mx-20 lg:mx-0">
                     <h3 class="text-2xl text-center lg:text-justify lg:text-5xl font-extrabold text-black">Deal of the day</h3>
                     <p class="text-base text-center lg:text-justify font-medium text-gray-600">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
+
+                <!-- Static Timer -->
                 <div class="flex flex-row flex-1 items-center">
                     <div class="px-5 space-y-2.5">
                         <div class="flex items-center gap-6">
@@ -219,8 +223,8 @@
                 </div>
             </div>
 
-            <!-- Cards -->
-            <div class="grid grid-cols-1 px-4 lg:grid-cols-4 gap-8 mt-16 mb-5">
+            <!--Fruit Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4 md:px-14 lg:px-4 mt-16 mb-5">
 
                 <!-- Item 1 -->
                 <div class="flex flex-col justify-center items-center border border-b-gray-200 space-y-5">
@@ -414,9 +418,9 @@
                 
             </div>
 
-            <!-- shop all button -->
+            <!-- show all button -->
             <div class="flex justify-center items-center ">
-                <button class="w-32 h-12 rounded-md bg-primary-red text-white text-xl tracking-wider ">Shop All</button>
+                <button class="w-32 h-12 rounded-md bg-primary-red text-white text-xl tracking-wider ">Show All</button>
             </div>
         </section>
 
@@ -429,7 +433,7 @@
                         <h1 class="text-3xl font-bold text-white mb-5">Meet the team section</h1>
                         <p class="text-white text-sm mb-8">Contrary to popular belief, is not simply random text. It has roots in a piece of classical 
                         <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-                        <div class="flex flex-col lg:flex-row justify-center items-center text-center gap-5">
+                        <div class="flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-center items-center text-center gap-5">
                             <div class="flex flex-col justify-center items-center space-y-2">
                                 <div class="w-24 h-24">
                                     <img src="images/member1.png" alt="">
@@ -498,11 +502,11 @@
 
         <!-- Why Choose Us section -->
         <section class="mb-28">
-            <div class="text-center px-8 lg:px-36 mb-12">
+            <div class="text-center px-8 md:px-48 lg:px-36 mb-12">
                 <h2 class="text-2xl font-extrabold">Why Choose Us</h2>
                 <p class="text-base font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
-            <div class="flex flex-col lg:flex-row gap-10 justify-between items-center">
+            <div class="flex flex-col lg:flex-row px-4 gap-10 justify-between items-center">
                 <!-- left -->
                 <div class="mx-auto text-center lg:text-justify items-center space-y-6 order-2 lg:-order-none">
                     <div class="lg:flex items-center gap-5 px-20 lg:px-0">
@@ -540,7 +544,7 @@
                 </div>
 
                 <!-- Middle -->
-                <div class="w-3/4 order-1 lg:-order-none">
+                <div class="w-3/4 md:w-fit lg:w-3/4 order-1 lg:order-none">
                     <img src="./images/whychoose1.png" alt="">
                 </div>
 
@@ -566,7 +570,7 @@
                             <p class="text-sm font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
-                    <div class="lg:flex items-center gap-5 px-20 lg:px-0">
+                    <div class="lg:flex items-center gap-5 ">
                         <div class="inline-block bg-gray-200 p-2 rounded-full lg:order-2">
                             <i class="fa-solid fa-face-grin-wide"></i>
                         </div>
@@ -584,7 +588,7 @@
         <!-- Footer -->
     <footer  class="bg-black max-w-screen-2xl mx-auto">
         <div class="space-y-10 max-w-screen-lg mx-auto p-5 lg:p-10">
-            <div class="flex flex-row justify-center items-center gap-2">
+            <div class="flex flex-row justify-center items-center gap-3">
                 <div>
                     <img class="w-16 h-14" src="./images/logo.png" alt="">
                 </div>
@@ -593,20 +597,22 @@
                 </div>
             </div>
             <div class=" lg:px-20 ">
-                <ul class="text-white grid grid-cols-4 lg:grid-cols-6 justify-center text-center lg:gap-10 text-base font-semibold mx-auto">
+                <ul class="text-white grid grid-cols-4 md:grid-cols-6 justify-center text-center lg:gap-10 text-base font-semibold mx-auto">
                     <li>Home</li>
                     <li>About Us</li>
                     <li>Shop</li>
                     <li>All Fruits</li>
-                    <li class="col-span-2 lg:col-span-1">Support</li>
+                    <li class="col-span-2 md:col-span-1">Support</li>
                     <li>My Account</li>
                 </ul>
             </div>
-            <div class="text-white flex justify-center items-center gap-5">
+            <div class="text-white flex justify-center items-center gap-4">
                 <i class="fa-brands fa-pinterest fa-2x"></i>
                 <i class="fa-brands fa-facebook fa-2x"></i>
+                <i class="fa-brands fa-tiktok fa-2x"></i>
                 <i class="fa-brands fa-youtube fa-2x"></i>
                 <i class="fa-brands fa-instagram fa-2x"></i>
+                
             </div>
         </div>
     </footer>
